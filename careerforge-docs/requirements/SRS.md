@@ -1828,3 +1828,119 @@ The security requirements are satisfied when:
 - Passwords and sensitive information are securely protected.
 - Uploaded files are validated.
 - Security-related activities can be monitored.
+
+## 4.3 Usability Requirements
+
+### Description
+
+The Usability Requirements define the standards for creating a simple, understandable, and user-friendly experience for CareerForge users.
+
+The system shall provide an interface that allows users to complete their tasks efficiently with minimal confusion.
+
+---
+
+## NFR-USABILITY-001: User Interface Consistency
+
+### Requirement
+
+The system shall provide a consistent user interface across different pages and features.
+
+### Measurement Criteria
+
+| Metric | Target | Verification Method |
+|---|---|---|
+| Design consistency | All major pages follow common design patterns | UI review |
+| Navigation consistency | Similar actions use similar interaction patterns | Usability testing |
+| Error message consistency | Errors follow a standard format | UI inspection |
+
+---
+
+## NFR-USABILITY-002: Ease of Navigation
+
+### Requirement
+
+The system shall provide clear navigation that allows users to easily access important features.
+
+### Measurement Criteria
+
+| Metric | Target | Verification Method |
+|---|---|---|
+| Access to main features | Users can reach important features within 3 navigation steps | Usability testing |
+| Navigation clarity | Users can identify their current location in the system | User testing |
+| Menu organization | Features are grouped logically | UI evaluation |
+
+---
+
+## NFR-USABILITY-003: User Learning Time
+
+### Requirement
+
+The system shall allow new users to understand basic platform operations quickly.
+
+### Measurement Criteria
+
+| Metric | Target | Verification Method |
+|---|---|---|
+| New user onboarding | Users can complete basic tasks within 10 minutes | User testing |
+| Registration completion | New users can complete registration without assistance | Usability testing |
+| Job search understanding | Users can find a job opportunity without training | User testing |
+
+---
+
+## NFR-USABILITY-004: Error Prevention and Feedback
+
+### Requirement
+
+The system shall provide clear feedback when users perform actions or encounter errors.
+
+### Measurement Criteria
+
+| Metric | Target | Verification Method |
+|---|---|---|
+| Form validation | Invalid input detected before submission | Functional testing |
+| Error messages | Messages explain the problem and possible solution | UI review |
+| Action feedback | Successful actions provide confirmation messages | User testing |
+
+---
+
+## NFR-USABILITY-005: Responsive User Experience
+
+### Requirement
+
+The system shall provide a usable interface across different screen sizes.
+
+### Measurement Criteria
+
+| Metric | Target | Verification Method |
+|---|---|---|
+| Supported devices | Desktop, tablet, and mobile browser support | Responsive testing |
+| Layout adaptation | Interface remains usable at different screen sizes | UI testing |
+| Text readability | Content remains readable without manual zooming | Accessibility testing |
+
+---
+
+## NFR-USABILITY-006: Accessibility Support
+
+### Requirement
+
+The system shall consider accessibility principles to support users with different abilities.
+
+### Measurement Criteria
+
+| Metric | Target | Verification Method |
+|---|---|---|
+| Keyboard navigation | Main features accessible using keyboard controls | Accessibility testing |
+| Color and contrast | Text remains readable | UI accessibility review |
+| Form labels | User inputs contain clear labels | Interface inspection |
+
+---
+
+# Usability Acceptance Criteria
+
+The usability requirements are satisfied when:
+
+- Users can understand the platform easily.
+- Common tasks require minimal steps.
+- The interface is consistent across the application.
+- Errors provide useful guidance.
+- The system works effectively across supported devices.
