@@ -1600,3 +1600,105 @@ The module is considered successful when:
 - Job Seekers can monitor their job search activities.
 - Employers can monitor recruitment activities.
 - Dashboard information is personalized according to user roles.
+
+# 4. Non-Functional Requirements
+
+## 4.1 Performance Requirements
+
+### Description
+
+The Performance Requirements define measurable expectations for the speed, efficiency, and responsiveness of the CareerForge platform.
+
+The system shall provide acceptable performance under normal operating conditions and maintain efficiency as the amount of users and data increases.
+
+---
+
+## NFR-PERFORMANCE-001: Page Loading Performance
+
+### Requirement
+
+The system shall load user-facing pages within an acceptable response time.
+
+### Measurement Criteria
+
+| Metric | Target | Verification Method |
+|---|---|---|
+| Initial page loading time | Less than 3 seconds under normal network conditions | Performance testing |
+| Dashboard loading time | Less than 3 seconds for authenticated users | User interface testing |
+| Navigation response time | Less than 1 second for standard actions | Application testing |
+
+---
+
+## NFR-PERFORMANCE-002: Job Search Performance
+
+### Requirement
+
+The system shall provide fast and efficient job searching and filtering.
+
+### Measurement Criteria
+
+| Metric | Target | Verification Method |
+|---|---|---|
+| Search result response time | Less than 2 seconds | API performance testing |
+| Filter operation response time | Less than 2 seconds | Functional performance testing |
+| Search accuracy | Returns relevant available job results | Test dataset evaluation |
+
+---
+
+## NFR-PERFORMANCE-003: Concurrent User Support
+
+### Requirement
+
+The system shall maintain acceptable performance when multiple users access CareerForge simultaneously.
+
+### Measurement Criteria
+
+| Metric | Target | Verification Method |
+|---|---|---|
+| Supported concurrent users | Minimum 100 active users during MVP stage | Load testing |
+| System availability during normal usage | 99% uptime target | Monitoring |
+| Error rate during normal operation | Less than 1% of requests | System monitoring |
+
+---
+
+## NFR-PERFORMANCE-004: Database Performance
+
+### Requirement
+
+The system shall efficiently store and retrieve user, job, and application data.
+
+### Measurement Criteria
+
+| Metric | Target | Verification Method |
+|---|---|---|
+| Common database queries | Less than 500ms response time | Database performance testing |
+| Job retrieval operations | Less than 1 second | API testing |
+| Application retrieval operations | Less than 1 second | API testing |
+
+---
+
+## NFR-PERFORMANCE-005: Scalability
+
+### Requirement
+
+The system shall support future growth in users, job postings, and application records without major redesign.
+
+### Measurement Criteria
+
+| Metric | Target | Verification Method |
+|---|---|---|
+| User growth support | Architecture supports future expansion | Design review |
+| Database growth | System maintains acceptable performance as data increases | Stress testing |
+| Feature expansion | New modules can be added without affecting existing functionality | Architecture evaluation |
+
+---
+
+# Performance Acceptance Criteria
+
+The performance requirements are satisfied when:
+
+- Main pages load within the defined response time.
+- Job searches return results efficiently.
+- The system supports expected MVP user traffic.
+- Database operations remain responsive.
+- Performance degradation remains acceptable as data grows.
