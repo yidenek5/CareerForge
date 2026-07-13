@@ -74,3 +74,31 @@ This section defines the key terms and abbreviations used throughout this Softwa
 | Database | A structured collection of information used to store and manage system data. |
 | Authentication | The process of verifying a user's identity before allowing access to the system. |
 | Authorization | The process of determining what actions an authenticated user is allowed to perform. |
+
+# 2. Product Overview
+
+## 2.1 Product Description
+
+CareerForge is a smart job discovery and recruitment platform designed to improve the connection between job seekers and employers.
+
+The platform provides a centralized environment where individuals can discover employment opportunities, present their professional information, and manage their job applications.
+
+At the same time, organizations can use CareerForge to create company profiles, publish job opportunities, review candidates, and manage recruitment activities.
+
+Unlike traditional job listing platforms that mainly focus on displaying vacancies, CareerForge focuses on creating a more organized and efficient recruitment experience by connecting candidate information with employer requirements.
+
+The system supports the complete basic recruitment workflow:
+
+```
+Create Profile
+       ↓
+Discover Opportunities
+       ↓
+Apply for Jobs
+       ↓
+Review Applications
+       ↓
+Manage Recruitment Process
+```
+
+The MVP version of CareerForge focuses on providing the essential features required for job discovery and application management while maintaining a foundation that can support future improvements and advanced features.
