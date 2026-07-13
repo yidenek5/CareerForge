@@ -1353,3 +1353,250 @@ The module is considered successful when:
 - Application progress is transparent.
 - Duplicate applications are prevented.
 - Recruitment activities are organized.
+
+## 3.7 Dashboard and User Activity Management
+
+### Description
+
+The Dashboard and User Activity Management module provides personalized dashboards for different CareerForge users.
+
+The dashboard presents relevant information and activities based on the user's role, allowing users to efficiently manage their interactions with the platform.
+
+The system shall provide separate dashboard experiences for Job Seekers and Employers.
+
+---
+
+# Job Seeker Dashboard Requirements
+
+---
+
+## FR-DASHBOARD-001: Access Job Seeker Dashboard
+
+### Requirement
+
+The system shall provide authenticated Job Seekers with a personalized dashboard.
+
+### User Role
+
+Job Seeker
+
+### Priority
+
+Should Have
+
+### Expected Behavior
+
+- The Job Seeker accesses their dashboard after authentication.
+- The system displays information related to the user's activities.
+- The user can navigate to important sections of the platform.
+
+---
+
+## FR-DASHBOARD-002: Display Job Seeker Profile Summary
+
+### Requirement
+
+The system shall display a summary of the Job Seeker's profile information.
+
+### User Role
+
+Job Seeker
+
+### Priority
+
+Should Have
+
+### Expected Information
+
+The dashboard may display:
+
+- Profile completion status.
+- Skills summary.
+- Education summary.
+- Experience summary.
+
+---
+
+## FR-DASHBOARD-003: Display Saved Jobs
+
+### Requirement
+
+The system shall allow Job Seekers to view their saved job opportunities from the dashboard.
+
+### User Role
+
+Job Seeker
+
+### Priority
+
+Should Have
+
+### Expected Behavior
+
+- The system displays saved jobs.
+- The user can access job details.
+- The user can manage saved opportunities.
+
+---
+
+## FR-DASHBOARD-004: Display Application Overview
+
+### Requirement
+
+The system shall provide Job Seekers with an overview of their submitted applications.
+
+### User Role
+
+Job Seeker
+
+### Priority
+
+Must Have
+
+### Expected Information
+
+The dashboard displays:
+
+- Number of submitted applications.
+- Current application statuses.
+- Recent application activities.
+
+---
+
+# Employer Dashboard Requirements
+
+---
+
+## FR-DASHBOARD-005: Access Employer Dashboard
+
+### Requirement
+
+The system shall provide authenticated Employers with a personalized dashboard.
+
+### User Role
+
+Employer
+
+### Priority
+
+Should Have
+
+### Expected Behavior
+
+- The Employer accesses their dashboard after authentication.
+- The system displays company-related activities.
+
+---
+
+## FR-DASHBOARD-006: Display Job Posting Summary
+
+### Requirement
+
+The system shall display a summary of Employer job postings.
+
+### User Role
+
+Employer
+
+### Priority
+
+Should Have
+
+### Expected Information
+
+The dashboard displays:
+
+- Active job postings.
+- Closed job postings.
+- Number of received applications.
+
+---
+
+## FR-DASHBOARD-007: Display Applicant Activity
+
+### Requirement
+
+The system shall allow Employers to view recruitment activity through the dashboard.
+
+### User Role
+
+Employer
+
+### Priority
+
+Should Have
+
+### Expected Information
+
+The dashboard displays:
+
+- New applications.
+- Pending reviews.
+- Candidate status updates.
+
+---
+
+# General Dashboard Requirements
+
+---
+
+## FR-DASHBOARD-008: Role-Based Dashboard Access
+
+### Requirement
+
+The system shall display dashboard content according to the user's assigned role.
+
+### User Role
+
+All Authenticated Users
+
+### Priority
+
+Must Have
+
+### Expected Behavior
+
+- Job Seekers access Job Seeker dashboards.
+- Employers access Employer dashboards.
+- Users cannot access dashboards belonging to other roles.
+
+---
+
+## FR-DASHBOARD-009: Display Recent Activities
+
+### Requirement
+
+The system shall provide users with a summary of recent activities.
+
+### User Role
+
+Job Seeker, Employer
+
+### Priority
+
+Could Have
+
+### Expected Activities
+
+Examples:
+
+Job Seeker:
+
+- Recent applications.
+- Recently viewed jobs.
+
+Employer:
+
+- New applicants.
+- Recently created jobs.
+
+---
+
+# Dashboard Success Criteria
+
+The module is considered successful when:
+
+- Users can quickly access important information.
+- Job Seekers can monitor their job search activities.
+- Employers can monitor recruitment activities.
+- Dashboard information is personalized according to user roles.
