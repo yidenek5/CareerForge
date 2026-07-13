@@ -387,3 +387,208 @@ The module is considered successful when:
 - Registered users can access their accounts.
 - Unauthorized access is prevented.
 - User permissions are correctly enforced.
+## 3.2 Job Seeker Profile Management
+
+### Description
+
+The Job Seeker Profile Management module allows registered Job Seekers to create, view, and update their professional information.
+
+The system shall store and manage candidate information including personal details, skills, education, experience, and resume information.
+
+---
+
+## FR-PROFILE-001: Create Job Seeker Profile
+
+### Requirement
+
+The system shall allow Job Seekers to create a professional profile after registration.
+
+### User Role
+
+Job Seeker
+
+### Priority
+
+Must Have
+
+### Expected Behavior
+
+- The Job Seeker provides required profile information.
+- The system validates the provided information.
+- The system creates a professional profile associated with the user's account.
+- The profile becomes available for future job applications and employer review.
+
+---
+
+## FR-PROFILE-002: View Profile Information
+
+### Requirement
+
+The system shall allow Job Seekers to view their own profile information.
+
+### User Role
+
+Job Seeker
+
+### Priority
+
+Must Have
+
+### Expected Behavior
+
+- The user accesses their profile page.
+- The system displays stored profile information.
+- The user can review their professional details.
+
+---
+
+## FR-PROFILE-003: Update Profile Information
+
+### Requirement
+
+The system shall allow Job Seekers to update their personal and professional profile information.
+
+### User Role
+
+Job Seeker
+
+### Priority
+
+Must Have
+
+### Expected Behavior
+
+- The user modifies profile information.
+- The system validates the updated data.
+- The system saves the changes successfully.
+
+---
+
+## FR-PROFILE-004: Manage Skills
+
+### Requirement
+
+The system shall allow Job Seekers to add, edit, and remove skills from their profiles.
+
+### User Role
+
+Job Seeker
+
+### Priority
+
+Must Have
+
+### Expected Behavior
+
+- The user adds professional or technical skills.
+- The system stores the selected skills.
+- The skills are displayed as part of the user's profile.
+
+---
+
+## FR-PROFILE-005: Manage Education Information
+
+### Requirement
+
+The system shall allow Job Seekers to add and manage their educational background.
+
+### User Role
+
+Job Seeker
+
+### Priority
+
+Must Have
+
+### Expected Behavior
+
+The user can provide:
+
+- Institution name.
+- Field of study.
+- Degree or qualification.
+- Completion date.
+
+The system stores and displays the education information.
+
+---
+
+## FR-PROFILE-006: Manage Work Experience
+
+### Requirement
+
+The system shall allow Job Seekers to add and manage previous work experience.
+
+### User Role
+
+Job Seeker
+
+### Priority
+
+Must Have
+
+### Expected Behavior
+
+The user can provide:
+
+- Company name.
+- Job position.
+- Employment period.
+- Description of responsibilities.
+
+The system stores and displays experience information.
+
+---
+
+## FR-PROFILE-007: Upload Resume
+
+### Requirement
+
+The system shall allow Job Seekers to upload a resume document.
+
+### User Role
+
+Job Seeker
+
+### Priority
+
+Should Have
+
+### Expected Behavior
+
+- The user uploads a supported resume file.
+- The system validates the file.
+- The resume is stored and linked to the user's profile.
+- Employers can access the resume when permitted.
+
+---
+
+## FR-PROFILE-008: Profile Visibility
+
+### Requirement
+
+The system shall control the visibility of Job Seeker profiles according to platform rules.
+
+### User Role
+
+Job Seeker, Employer
+
+### Priority
+
+Should Have
+
+### Expected Behavior
+
+- Job Seekers can control profile availability.
+- Employers can view candidate information according to access permissions.
+
+---
+
+## Profile Management Success Criteria
+
+The module is considered successful when:
+
+- Job Seekers can create professional profiles.
+- Candidates can represent their skills and experience.
+- Profile information can be updated.
+- Employers can access relevant candidate information during recruitment.
