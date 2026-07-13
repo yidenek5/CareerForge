@@ -254,3 +254,136 @@ To ensure CareerForge remains secure, reliable, and effective for all users.
 | Job Seeker | Find jobs and manage applications |
 | Employer | Post jobs and manage candidates |
 | Administrator | Manage and maintain the platform |
+# 3. Functional Requirements
+
+## 3.1 Authentication and Account Management
+
+### Description
+
+The Authentication and Account Management module manages user registration, login, identity verification, and account access within CareerForge.
+
+The system shall provide secure access for different user roles, including Job Seekers, Employers, and Administrators.
+
+---
+
+## FR-AUTH-001: User Registration
+
+### Requirement
+
+The system shall allow new users to create an account by providing the required registration information.
+
+### User Role
+
+Guest User
+
+### Priority
+
+Must Have
+
+### Expected Behavior
+
+- The user provides required information.
+- The system validates the provided information.
+- The system creates a new user account when the information is valid.
+- The user receives confirmation that the account was created successfully.
+
+---
+
+## FR-AUTH-002: User Login
+
+### Requirement
+
+The system shall allow registered users to authenticate and access their accounts using valid credentials.
+
+### User Role
+
+Job Seeker, Employer, Administrator
+
+### Priority
+
+Must Have
+
+### Expected Behavior
+
+- The user enters login credentials.
+- The system verifies the credentials.
+- The system grants access when authentication is successful.
+- The system denies access when credentials are invalid.
+
+---
+
+## FR-AUTH-003: User Logout
+
+### Requirement
+
+The system shall allow authenticated users to securely log out of their accounts.
+
+### User Role
+
+Job Seeker, Employer, Administrator
+
+### Priority
+
+Must Have
+
+### Expected Behavior
+
+- The user selects the logout option.
+- The system ends the active session.
+- The user is redirected to an appropriate public page.
+
+---
+
+## FR-AUTH-004: Password Management
+
+### Requirement
+
+The system shall provide users with the ability to recover or update their account passwords.
+
+### User Role
+
+Registered Users
+
+### Priority
+
+Should Have
+
+### Expected Behavior
+
+- Users can request password recovery.
+- The system verifies the user's identity.
+- The user can create a new password.
+
+---
+
+## FR-AUTH-005: Role-Based Access Control
+
+### Requirement
+
+The system shall restrict access to features based on the user's assigned role.
+
+### User Role
+
+All Users
+
+### Priority
+
+Must Have
+
+### Expected Behavior
+
+- Job Seekers can access job seeker features.
+- Employers can access employer features.
+- Administrators can access management features.
+- Users cannot access unauthorized functions.
+
+---
+
+## Authentication Module Success Criteria
+
+The module is considered successful when:
+
+- Users can securely create accounts.
+- Registered users can access their accounts.
+- Unauthorized access is prevented.
+- User permissions are correctly enforced.
