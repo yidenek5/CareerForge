@@ -960,3 +960,174 @@ The module is considered successful when:
 - Job postings are connected to the correct companies.
 - Employers can manage the availability of their opportunities.
 - The platform maintains organized job data.
+
+## 3.5 Job Search and Discovery
+
+### Description
+
+The Job Search and Discovery module allows Job Seekers and visitors to discover available employment opportunities published by Employers.
+
+The system shall provide users with tools to browse, search, filter, and view job information to help them identify suitable opportunities.
+
+The module focuses on improving the job discovery process by organizing job information in a clear and accessible way.
+
+---
+
+## FR-SEARCH-001: Browse Available Jobs
+
+### Requirement
+
+The system shall allow users to browse available job postings published on CareerForge.
+
+### User Role
+
+Guest User, Job Seeker
+
+### Priority
+
+Must Have
+
+### Expected Behavior
+
+- The system displays available job opportunities.
+- Users can view basic information about each job.
+- Only active job postings are displayed as available opportunities.
+
+---
+
+## FR-SEARCH-002: Search Jobs by Keyword
+
+### Requirement
+
+The system shall allow Job Seekers to search for jobs using keywords.
+
+### User Role
+
+Job Seeker
+
+### Priority
+
+Must Have
+
+### Expected Behavior
+
+- The user enters a search keyword.
+- The system searches available job postings.
+- The system returns relevant job results.
+
+### Example Keywords
+
+- Software Engineer
+- React Developer
+- Database Administrator
+
+---
+
+## FR-SEARCH-003: Filter Job Results
+
+### Requirement
+
+The system shall allow Job Seekers to filter job search results based on selected criteria.
+
+### User Role
+
+Job Seeker
+
+### Priority
+
+Should Have
+
+### Expected Filters
+
+Users can filter jobs by:
+
+- Location.
+- Employment type.
+- Experience level.
+- Job category.
+- Required skills.
+
+---
+
+## FR-SEARCH-004: View Job Details
+
+### Requirement
+
+The system shall allow users to view complete information about a selected job posting.
+
+### User Role
+
+Guest User, Job Seeker
+
+### Priority
+
+Must Have
+
+### Expected Behavior
+
+When a user selects a job, the system displays:
+
+- Job title.
+- Company information.
+- Job description.
+- Required skills.
+- Experience requirements.
+- Employment type.
+- Location.
+- Application information.
+
+---
+
+## FR-SEARCH-005: Sort Job Results
+
+### Requirement
+
+The system shall allow Job Seekers to organize search results using sorting options.
+
+### User Role
+
+Job Seeker
+
+### Priority
+
+Could Have
+
+### Expected Sorting Options
+
+- Latest posted jobs.
+- Most relevant jobs.
+- Recently updated jobs.
+
+---
+
+## FR-SEARCH-006: Save Job Opportunities
+
+### Requirement
+
+The system shall allow authenticated Job Seekers to save job postings for later review.
+
+### User Role
+
+Job Seeker
+
+### Priority
+
+Should Have
+
+### Expected Behavior
+
+- The user selects a save option.
+- The job is added to the user's saved jobs list.
+- The user can access saved jobs from their account.
+
+---
+
+# Job Search and Discovery Success Criteria
+
+The module is considered successful when:
+
+- Users can discover available job opportunities.
+- Job Seekers can quickly find relevant jobs.
+- Job information is organized and understandable.
+- Users can access complete job details before applying.
+- Search results provide meaningful opportunities.
