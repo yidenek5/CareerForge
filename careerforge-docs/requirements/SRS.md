@@ -50,3 +50,27 @@ The system scope includes:
 - Ensuring a secure and reliable platform environment.
 
 The initial MVP does not include advanced features such as artificial intelligence-based job recommendations, real-time communication, interview scheduling, or mobile applications. These features may be considered for future versions.
+
+
+
+## 1.3 Definitions and Abbreviations
+
+This section defines the key terms and abbreviations used throughout this Software Requirements Specification document.
+
+| Term | Definition |
+|---|---|
+| SRS | Software Requirements Specification. A document that describes the functional and non-functional requirements of a software system. |
+| MVP | Minimum Viable Product. The first version of a product that contains the essential features required to solve the main problem and validate the idea. |
+| CareerForge | A smart job discovery and recruitment platform that connects job seekers with employers. |
+| Job Seeker | A user who searches for employment opportunities, creates a professional profile, and applies for jobs. |
+| Employer | A company representative or organization that creates job postings and manages candidate applications. |
+| Administrator | A user responsible for managing the platform, users, and system operations. |
+| Job Posting | A published description of an available employment opportunity created by an employer. |
+| Application | A submission made by a job seeker to express interest in a job opportunity. |
+| Candidate Profile | A professional profile containing information about a job seeker's skills, education, experience, and qualifications. |
+| Recruitment Process | The process of finding, evaluating, and selecting candidates for employment. |
+| User Interface (UI) | The visual part of the application through which users interact with the system. |
+| Application Programming Interface (API) | A communication interface that allows different software systems to exchange data and services. |
+| Database | A structured collection of information used to store and manage system data. |
+| Authentication | The process of verifying a user's identity before allowing access to the system. |
+| Authorization | The process of determining what actions an authenticated user is allowed to perform. |
