@@ -1702,3 +1702,129 @@ The performance requirements are satisfied when:
 - The system supports expected MVP user traffic.
 - Database operations remain responsive.
 - Performance degradation remains acceptable as data grows.
+
+## 4.2 Security Requirements
+
+### Description
+
+The Security Requirements define the measures required to protect CareerForge users, data, and system resources from unauthorized access, misuse, and security threats.
+
+The system shall ensure confidentiality, integrity, and availability of platform information.
+
+---
+
+## NFR-SECURITY-001: User Authentication Security
+
+### Requirement
+
+The system shall securely authenticate users before allowing access to protected features.
+
+### Measurement Criteria
+
+| Metric | Target | Verification Method |
+|---|---|---|
+| Unauthorized access prevention | 100% of protected resources require authentication | Security testing |
+| Login validation accuracy | Invalid credentials must always be rejected | Authentication testing |
+| Session protection | User sessions must expire after inactivity period | Security testing |
+
+---
+
+## NFR-SECURITY-002: Password Protection
+
+### Requirement
+
+The system shall securely store and manage user passwords.
+
+### Measurement Criteria
+
+| Metric | Target | Verification Method |
+|---|---|---|
+| Password storage | Passwords must never be stored as plain text | Database security review |
+| Password encryption | Industry-standard hashing algorithm must be used | Code review |
+| Minimum password policy | Password requirements must be enforced | Functional testing |
+
+---
+
+## NFR-SECURITY-003: Role-Based Authorization
+
+### Requirement
+
+The system shall control user access based on assigned roles.
+
+### Measurement Criteria
+
+| Metric | Target | Verification Method |
+|---|---|---|
+| Role enforcement | 100% of protected actions checked against user permissions | Authorization testing |
+| Unauthorized action prevention | Users cannot access restricted features | Security testing |
+| Data ownership protection | Users can modify only their own information | Access control testing |
+
+---
+
+## NFR-SECURITY-004: Personal Data Protection
+
+### Requirement
+
+The system shall protect user personal information stored within CareerForge.
+
+### Protected Information
+
+The system shall protect:
+
+- User account information.
+- Professional profiles.
+- Resume documents.
+- Application records.
+- Company information.
+
+### Measurement Criteria
+
+| Metric | Target | Verification Method |
+|---|---|---|
+| Data exposure prevention | No unauthorized access to private data | Security testing |
+| Secure data transmission | Sensitive data transmitted through secure connections | Network security testing |
+| Data access logging | Important security actions recorded | System audit review |
+
+---
+
+## NFR-SECURITY-005: File Upload Security
+
+### Requirement
+
+The system shall securely manage uploaded documents such as resumes.
+
+### Measurement Criteria
+
+| Metric | Target | Verification Method |
+|---|---|---|
+| Allowed file types | Only approved file formats accepted | Functional testing |
+| File size validation | Maximum upload size enforced | File upload testing |
+| Malicious file prevention | Unsafe files rejected | Security testing |
+
+---
+
+## NFR-SECURITY-006: Security Monitoring
+
+### Requirement
+
+The system shall monitor important security-related activities.
+
+### Measurement Criteria
+
+| Metric | Target | Verification Method |
+|---|---|---|
+| Failed login tracking | Multiple failed attempts detected | Security testing |
+| Critical activity logging | Important actions recorded | Log review |
+| Security issue detection | Suspicious activities can be identified | Monitoring review |
+
+---
+
+# Security Acceptance Criteria
+
+The security requirements are satisfied when:
+
+- Only authenticated users can access protected features.
+- Users can access only authorized resources.
+- Passwords and sensitive information are securely protected.
+- Uploaded files are validated.
+- Security-related activities can be monitored.
