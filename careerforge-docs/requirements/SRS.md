@@ -592,3 +592,162 @@ The module is considered successful when:
 - Candidates can represent their skills and experience.
 - Profile information can be updated.
 - Employers can access relevant candidate information during recruitment.
+
+## 3.3 Employer and Company Management
+
+### Description
+
+The Employer and Company Management module allows registered employers to create and manage company profiles within CareerForge.
+
+The module provides employers with the ability to represent their organizations professionally by providing company information that helps job seekers understand available opportunities and the organizations behind them.
+
+---
+
+## FR-COMPANY-001: Create Employer Company Profile
+
+### Requirement
+
+The system shall allow authenticated Employers to create a company profile.
+
+### User Role
+
+Employer
+
+### Priority
+
+Must Have
+
+### Expected Behavior
+
+- The Employer provides required company information.
+- The system validates the provided information.
+- The system creates a company profile associated with the Employer account.
+- The company profile becomes available for job posting and candidate interaction.
+
+---
+
+## FR-COMPANY-002: View Company Profile
+
+### Requirement
+
+The system shall allow users to view publicly available company profile information.
+
+### User Role
+
+Guest User, Job Seeker, Employer
+
+### Priority
+
+Must Have
+
+### Expected Behavior
+
+- Users can access company information from available areas of the platform.
+- The system displays approved company details.
+- The information helps candidates understand the organization.
+
+---
+
+## FR-COMPANY-003: Update Company Profile
+
+### Requirement
+
+The system shall allow Employers to update their company profile information.
+
+### User Role
+
+Employer
+
+### Priority
+
+Should Have
+
+### Expected Behavior
+
+- The Employer edits company details.
+- The system validates updated information.
+- The system saves the changes.
+- The updated information is displayed to users.
+
+---
+
+## FR-COMPANY-004: Manage Company Information
+
+### Requirement
+
+The system shall allow Employers to manage essential company information.
+
+### User Role
+
+Employer
+
+### Priority
+
+Must Have
+
+### Expected Information
+
+The Employer can manage:
+
+- Company name.
+- Company description.
+- Industry or business category.
+- Company location.
+- Website information.
+- Contact information.
+- Company logo.
+
+---
+
+## FR-COMPANY-005: Employer Account Association
+
+### Requirement
+
+The system shall associate each Employer account with its corresponding company profile.
+
+### User Role
+
+Employer
+
+### Priority
+
+Must Have
+
+### Expected Behavior
+
+- An Employer can manage only their own company information.
+- The system prevents unauthorized users from modifying company data.
+- Company ownership is maintained securely.
+
+---
+
+## FR-COMPANY-006: Company Profile Validation
+
+### Requirement
+
+The system shall validate company profile information before making it publicly available.
+
+### User Role
+
+Employer, Administrator
+
+### Priority
+
+Should Have
+
+### Expected Behavior
+
+- Required fields must be completed.
+- Invalid information is rejected.
+- The platform maintains reliable company information.
+
+---
+
+## Company Management Success Criteria
+
+The module is considered successful when:
+
+- Employers can create company identities.
+- Organizations can present accurate information.
+- Job Seekers can understand companies before applying.
+- Company data is protected from unauthorized changes.
