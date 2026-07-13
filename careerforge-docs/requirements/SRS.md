@@ -102,3 +102,43 @@ Manage Recruitment Process
 ```
 
 The MVP version of CareerForge focuses on providing the essential features required for job discovery and application management while maintaining a foundation that can support future improvements and advanced features.
+
+## 2.2 Product Goals
+
+The main goals of CareerForge are to improve the job discovery and recruitment experience by creating a more efficient, organized, and user-focused platform.
+
+The primary goals of the system are:
+
+### Goal 1: Improve Job Discovery
+
+Help job seekers find relevant employment opportunities more easily by providing organized job information and effective search capabilities.
+
+---
+
+### Goal 2: Improve Candidate Visibility
+
+Allow job seekers to create professional profiles that better represent their skills, education, experience, and qualifications.
+
+---
+
+### Goal 3: Simplify Recruitment for Employers
+
+Provide employers with tools to publish job opportunities, review candidates, and manage applications efficiently.
+
+---
+
+### Goal 4: Create a Centralized Recruitment Platform
+
+Reduce the need for users to rely on multiple separate tools by providing job searching, application management, and recruitment activities in one platform.
+
+---
+
+### Goal 5: Improve Communication Between Candidates and Employers
+
+Create a structured process where candidates and employers can interact through clear job opportunities and application workflows.
+
+---
+
+### Goal 6: Build a Scalable Foundation for Future Improvements
+
+Design the platform in a way that allows future expansion with advanced features such as intelligent matching, analytics, and additional recruitment tools.
