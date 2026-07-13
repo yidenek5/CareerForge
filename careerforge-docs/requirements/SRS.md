@@ -751,3 +751,212 @@ The module is considered successful when:
 - Organizations can present accurate information.
 - Job Seekers can understand companies before applying.
 - Company data is protected from unauthorized changes.
+## 3.4 Job Management
+
+### Description
+
+The Job Management module allows Employers to create, manage, and maintain job postings on CareerForge.
+
+The module enables organizations to publish available employment opportunities and provide Job Seekers with accurate information about available positions.
+
+Each job posting shall contain essential details such as job title, description, required skills, experience level, location, and employment type.
+
+---
+
+## FR-JOB-001: Create Job Posting
+
+### Requirement
+
+The system shall allow authenticated Employers to create new job postings.
+
+### User Role
+
+Employer
+
+### Priority
+
+Must Have
+
+### Expected Behavior
+
+- The Employer provides job information.
+- The system validates the provided information.
+- The system creates a new job posting.
+- The job posting becomes available for Job Seekers to view.
+
+---
+
+## FR-JOB-002: Define Job Information
+
+### Requirement
+
+The system shall allow Employers to provide complete information about a job opportunity.
+
+### User Role
+
+Employer
+
+### Priority
+
+Must Have
+
+### Expected Information
+
+A job posting shall include:
+
+- Job title.
+- Job description.
+- Required skills.
+- Required experience level.
+- Employment type.
+- Job location.
+- Application deadline.
+- Company information.
+
+---
+
+## FR-JOB-003: View Job Posting
+
+### Requirement
+
+The system shall allow users to view available job posting details.
+
+### User Role
+
+Guest User, Job Seeker
+
+### Priority
+
+Must Have
+
+### Expected Behavior
+
+- The user selects a job opportunity.
+- The system displays complete job information.
+- The user can understand job requirements and responsibilities.
+
+---
+
+## FR-JOB-004: Update Job Posting
+
+### Requirement
+
+The system shall allow Employers to modify their existing job postings.
+
+### User Role
+
+Employer
+
+### Priority
+
+Should Have
+
+### Expected Behavior
+
+- The Employer selects a job posting.
+- The Employer updates job information.
+- The system validates changes.
+- The updated information is saved.
+
+---
+
+## FR-JOB-005: Delete Job Posting
+
+### Requirement
+
+The system shall allow Employers to remove their job postings when they are no longer available.
+
+### User Role
+
+Employer
+
+### Priority
+
+Should Have
+
+### Expected Behavior
+
+- The Employer selects a job posting.
+- The Employer removes or deletes the posting.
+- The system updates job availability.
+
+---
+
+## FR-JOB-006: Close Job Posting
+
+### Requirement
+
+The system shall allow Employers to close job postings when applications are no longer accepted.
+
+### User Role
+
+Employer
+
+### Priority
+
+Should Have
+
+### Expected Behavior
+
+- The Employer changes the job status.
+- The system marks the job as closed.
+- Job Seekers cannot submit new applications for closed jobs.
+
+---
+
+## FR-JOB-007: Manage Job Posting Status
+
+### Requirement
+
+The system shall maintain the status of each job posting.
+
+### User Role
+
+Employer, Administrator
+
+### Priority
+
+Must Have
+
+### Expected Status Values
+
+A job posting may have statuses such as:
+
+- Active.
+- Closed.
+- Expired.
+- Draft.
+
+---
+
+## FR-JOB-008: Associate Job Posting with Company
+
+### Requirement
+
+The system shall associate each job posting with the Employer's company profile.
+
+### User Role
+
+Employer
+
+### Priority
+
+Must Have
+
+### Expected Behavior
+
+- A job posting displays the related company information.
+- Candidates can identify the organization offering the opportunity.
+- Employers can manage only their own job postings.
+
+---
+
+# Job Management Success Criteria
+
+The module is considered successful when:
+
+- Employers can publish job opportunities.
+- Job Seekers can access accurate job information.
+- Job postings are connected to the correct companies.
+- Employers can manage the availability of their opportunities.
+- The platform maintains organized job data.
