@@ -1123,7 +1123,7 @@ Should Have
 ---
 
 # Job Search and Discovery Success Criteria
-
+"
 The module is considered successful when:
 
 - Users can discover available job opportunities.
@@ -1131,3 +1131,225 @@ The module is considered successful when:
 - Job information is organized and understandable.
 - Users can access complete job details before applying.
 - Search results provide meaningful opportunities.
+
+## 3.6 Application Management
+
+### Description
+
+The Application Management module manages the process of submitting, reviewing, and tracking job applications within CareerForge.
+
+The system shall allow Job Seekers to apply for available job opportunities and allow Employers to review and manage submitted applications.
+
+The module provides transparency by allowing candidates to track their application progress and allowing employers to organize candidate evaluation.
+
+---
+
+# Job Seeker Application Requirements
+
+---
+
+## FR-APPLICATION-001: Submit Job Application
+
+### Requirement
+
+The system shall allow authenticated Job Seekers to submit an application for an available job posting.
+
+### User Role
+
+Job Seeker
+
+### Priority
+
+Must Have
+
+### Expected Behavior
+
+- The Job Seeker selects an available job opportunity.
+- The system verifies that the user has permission to apply.
+- The system creates a new application record.
+- The application is associated with the Job Seeker and selected job posting.
+
+---
+
+## FR-APPLICATION-002: Prevent Duplicate Applications
+
+### Requirement
+
+The system shall prevent Job Seekers from submitting multiple applications for the same job posting.
+
+### User Role
+
+Job Seeker
+
+### Priority
+
+Must Have
+
+### Expected Behavior
+
+- The system checks existing applications.
+- If an application already exists, another application cannot be submitted.
+- The user receives an appropriate message.
+
+---
+
+## FR-APPLICATION-003: View Submitted Applications
+
+### Requirement
+
+The system shall allow Job Seekers to view jobs they have applied for.
+
+### User Role
+
+Job Seeker
+
+### Priority
+
+Must Have
+
+### Expected Behavior
+
+The system displays:
+
+- Job title.
+- Company name.
+- Application date.
+- Current application status.
+
+---
+
+## FR-APPLICATION-004: Track Application Status
+
+### Requirement
+
+The system shall allow Job Seekers to monitor the progress of their submitted applications.
+
+### User Role
+
+Job Seeker
+
+### Priority
+
+Must Have
+
+### Expected Status Values
+
+An application may have statuses such as:
+
+- Submitted.
+- Under Review.
+- Shortlisted.
+- Accepted.
+- Rejected.
+
+---
+
+# Employer Application Requirements
+
+---
+
+## FR-APPLICATION-005: View Received Applications
+
+### Requirement
+
+The system shall allow Employers to view applications submitted for their job postings.
+
+### User Role
+
+Employer
+
+### Priority
+
+Must Have
+
+### Expected Behavior
+
+- The Employer selects a job posting.
+- The system displays submitted applications.
+- The Employer can view candidate information.
+
+---
+
+## FR-APPLICATION-006: Review Candidate Information
+
+### Requirement
+
+The system shall allow Employers to review relevant candidate information during application evaluation.
+
+### User Role
+
+Employer
+
+### Priority
+
+Must Have
+
+### Expected Information
+
+Employers can view:
+
+- Candidate profile.
+- Skills.
+- Education.
+- Experience.
+- Resume (if available).
+
+---
+
+## FR-APPLICATION-007: Update Application Status
+
+### Requirement
+
+The system shall allow Employers to update the status of submitted applications.
+
+### User Role
+
+Employer
+
+### Priority
+
+Must Have
+
+### Expected Behavior
+
+- Employer selects an application.
+- Employer changes the application status.
+- System saves the updated status.
+- The candidate can view the change.
+
+---
+
+## FR-APPLICATION-008: Manage Application History
+
+### Requirement
+
+The system shall maintain a record of application activities.
+
+### User Role
+
+Job Seeker, Employer
+
+### Priority
+
+Should Have
+
+### Expected Behavior
+
+The system stores:
+
+- Application date.
+- Status changes.
+- Related job information.
+- Candidate and employer relationship.
+
+---
+
+# Application Management Success Criteria
+
+The module is considered successful when:
+
+- Job Seekers can apply for available jobs.
+- Employers can review submitted applications.
+- Application progress is transparent.
+- Duplicate applications are prevented.
+- Recruitment activities are organized.
