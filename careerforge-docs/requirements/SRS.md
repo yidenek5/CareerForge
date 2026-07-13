@@ -142,3 +142,115 @@ Create a structured process where candidates and employers can interact through 
 ### Goal 6: Build a Scalable Foundation for Future Improvements
 
 Design the platform in a way that allows future expansion with advanced features such as intelligent matching, analytics, and additional recruitment tools.
+
+## 2.3 User Roles
+
+CareerForge supports different types of users, each with specific responsibilities and access levels within the platform.
+
+The main user roles are:
+
+---
+
+## 1. Guest User
+
+### Description
+
+A Guest User is a visitor who accesses CareerForge without creating an account.
+
+### Responsibilities
+
+A Guest User can:
+
+- View public information about CareerForge.
+- Browse available job opportunities.
+- View basic job details.
+- Create a new account.
+
+### Limitations
+
+A Guest User cannot:
+
+- Apply for jobs.
+- Create a professional profile.
+- Manage applications.
+- Publish job opportunities.
+
+---
+
+## 2. Job Seeker
+
+### Description
+
+A Job Seeker is an individual looking for employment opportunities through CareerForge.
+
+### Responsibilities
+
+A Job Seeker can:
+
+- Create and manage a professional profile.
+- Add skills, education, and experience.
+- Upload a resume.
+- Search and filter job opportunities.
+- View job details.
+- Apply for available jobs.
+- Track application progress.
+
+### Main Goal
+
+To discover suitable employment opportunities and successfully manage the job application process.
+
+---
+
+## 3. Employer
+
+### Description
+
+An Employer is a company representative or organization that uses CareerForge to recruit candidates.
+
+### Responsibilities
+
+An Employer can:
+
+- Create and manage a company profile.
+- Publish job opportunities.
+- Update and manage job postings.
+- View submitted applications.
+- Review candidate information.
+- Update application status.
+
+### Main Goal
+
+To find suitable candidates and manage recruitment activities efficiently.
+
+---
+
+## 4. Administrator
+
+### Description
+
+An Administrator is a platform manager responsible for maintaining CareerForge operations.
+
+### Responsibilities
+
+An Administrator can:
+
+- Manage user accounts.
+- Manage company accounts.
+- Monitor job postings.
+- Handle platform issues.
+- Maintain system security and reliability.
+
+### Main Goal
+
+To ensure CareerForge remains secure, reliable, and effective for all users.
+
+---
+
+## User Role Summary
+
+| Role | Main Purpose |
+|---|---|
+| Guest User | Explore the platform and create an account |
+| Job Seeker | Find jobs and manage applications |
+| Employer | Post jobs and manage candidates |
+| Administrator | Manage and maintain the platform |
