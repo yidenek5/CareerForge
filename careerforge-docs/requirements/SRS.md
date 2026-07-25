@@ -2378,3 +2378,186 @@ Employers:
 Unauthorized users:
 
 - Cannot access private information.
+
+# 6. System Constraints
+
+## Description
+
+System constraints define the technical, operational, and business limitations that must be considered during the design and development of CareerForge.
+
+These constraints ensure that the system remains realistic, maintainable, secure, and aligned with the project objectives.
+
+---
+
+# SC-001: MVP Development Scope
+
+## Constraint
+
+The initial version of CareerForge shall focus only on essential features required to validate the core job discovery and recruitment workflow.
+
+## Description
+
+The MVP shall prioritize:
+
+- User authentication.
+- Job seeker profiles.
+- Employer profiles.
+- Job posting.
+- Job searching.
+- Job applications.
+
+Advanced features will be considered for future versions.
+
+Examples of future features:
+
+- AI job recommendations.
+- Automated candidate matching.
+- Interview scheduling.
+- Real-time messaging.
+- Mobile applications.
+
+---
+
+# SC-002: Technology Stack Constraint
+
+## Constraint
+
+The system shall be developed using selected technologies that support maintainability and scalability.
+
+## Description
+
+The initial technology stack will include:
+
+Frontend:
+
+- React.js for building the user interface.
+
+Backend:
+
+- Django/Python for server-side application logic.
+
+Database:
+
+- A relational database system for structured data management.
+
+The selected technologies should support future expansion.
+
+---
+
+# SC-003: Data Storage Constraint
+
+## Constraint
+
+The system shall store and manage structured user, company, job, and application data using a reliable database system.
+
+## Description
+
+The database must support:
+
+- User accounts.
+- User roles.
+- Profiles.
+- Companies.
+- Job postings.
+- Applications.
+
+Data relationships must remain consistent and secure.
+
+---
+
+# SC-004: Security Constraint
+
+## Constraint
+
+The system shall protect sensitive user and business information.
+
+## Description
+
+The system must ensure:
+
+- Secure authentication.
+- Protected passwords.
+- Role-based authorization.
+- Secure access to private information.
+- Safe document handling.
+
+---
+
+# SC-005: Resource Constraint
+
+## Constraint
+
+The development process shall consider available resources including time, infrastructure, and development capacity.
+
+## Description
+
+The MVP should be achievable within available resources while maintaining professional software engineering practices.
+
+The project shall prioritize:
+
+- Core functionality.
+- Clean architecture.
+- Maintainable code.
+- Quality documentation.
+
+---
+
+# SC-006: Browser Compatibility Constraint
+
+## Constraint
+
+The system shall support modern web browsers.
+
+## Description
+
+CareerForge should operate correctly on commonly used browsers such as:
+
+- Google Chrome.
+- Mozilla Firefox.
+- Microsoft Edge.
+
+Older unsupported browsers may not receive full compatibility.
+
+---
+
+# SC-007: Internet Dependency Constraint
+
+## Constraint
+
+CareerForge requires an active internet connection for full functionality.
+
+## Description
+
+Because the platform provides online job discovery and recruitment services:
+
+- User authentication requires connectivity.
+- Job information requires server access.
+- Applications require communication with the backend.
+
+---
+
+# SC-008: File Upload Constraint
+
+## Constraint
+
+Uploaded documents must follow defined security and storage limitations.
+
+## Description
+
+Resume uploads must:
+
+- Use supported file formats.
+- Respect maximum file size limits.
+- Pass security validation.
+
+---
+
+# System Constraint Acceptance Criteria
+
+The system constraints are satisfied when:
+
+- The MVP remains focused on core problems.
+- Technology decisions support future growth.
+- Sensitive information is protected.
+- The system operates within available resources.
+- Development remains manageable and maintainable.
