@@ -1125,3 +1125,434 @@ Messaging
 | Layered Architecture | Organizes system responsibilities |
 | Django MVT | Structures backend development |
 | REST API | Enables frontend-backend communication |
+
+
+# 5. High-Level Architecture
+
+## Description
+
+The CareerForge system is designed as a modern full-stack web application consisting of multiple independent layers and services.
+
+The architecture separates user interaction, business processing, data management, and external integrations.
+
+The major components are:
+
+- Client Layer
+- API Layer
+- Application Layer
+- Data Layer
+- External Services Layer
+
+---
+
+# 5.1 Complete System Architecture Diagram
+
+```
+                         Users
+
+                           |
+                           |
+                           ↓
+
+              +-----------------------+
+              |   React Frontend      |
+              |   Client Application  |
+              +-----------------------+
+
+                           |
+                           |
+                    HTTPS / REST API
+
+                           |
+                           ↓
+
+              +-----------------------+
+              |   Django Backend      |
+              |   API Application     |
+              +-----------------------+
+
+                           |
+          +----------------+----------------+
+          |                                 |
+          ↓                                 ↓
+
++-------------------+          +-------------------+
+| Business Services |          | Authentication    |
+|                   |          | Authorization     |
++-------------------+          +-------------------+
+
+          |
+          |
+          ↓
+
++-------------------------------+
+| Database Layer                |
+| PostgreSQL / Relational DB    |
++-------------------------------+
+
+          |
+          |
+          ↓
+
++-------------------------------+
+| External Services             |
+| Email, Storage, AI Services   |
++-------------------------------+
+```
+
+---
+
+# 5.2 Frontend Architecture
+
+## Component
+
+React Frontend Application
+
+## Responsibility
+
+The frontend provides the complete user experience for CareerForge users.
+
+It handles:
+
+- User interfaces.
+- Navigation.
+- Forms.
+- User interactions.
+- Client-side state management.
+- API communication.
+
+---
+
+## Main Frontend Areas
+
+```
+frontend/
+
+src/
+
+├── components/
+│
+├── pages/
+│
+├── features/
+│
+├── services/
+│
+├── hooks/
+│
+├── utils/
+│
+└── assets/
+```
+
+---
+
+## Frontend Responsibilities
+
+The frontend shall:
+
+- Display job listings.
+- Provide search interfaces.
+- Manage user forms.
+- Display application status.
+- Communicate with backend APIs.
+
+The frontend shall NOT:
+
+- Directly access the database.
+- Contain critical business rules.
+- Handle sensitive security operations.
+
+---
+
+# 5.3 Backend Architecture
+
+## Component
+
+Django Backend Application
+
+## Responsibility
+
+The backend acts as the central processing layer of CareerForge.
+
+It manages:
+
+- Business rules.
+- Authentication.
+- Authorization.
+- Data processing.
+- API responses.
+
+---
+
+## Main Backend Modules
+
+```
+backend/
+
+apps/
+
+├── users/
+│
+├── jobs/
+│
+├── companies/
+│
+├── applications/
+│
+├── notifications/
+│
+└── analytics/
+```
+
+---
+
+## Backend Responsibilities
+
+The backend shall:
+
+- Validate incoming requests.
+- Apply business rules.
+- Process user actions.
+- Communicate with the database.
+- Return appropriate responses.
+
+---
+
+# 5.4 Core Backend Services
+
+## User Management Service
+
+Responsible for:
+
+- Registration.
+- Login.
+- User profiles.
+- Roles and permissions.
+
+---
+
+## Job Management Service
+
+Responsible for:
+
+- Creating jobs.
+- Updating jobs.
+- Searching jobs.
+- Managing job status.
+
+---
+
+## Application Management Service
+
+Responsible for:
+
+- Submitting applications.
+- Tracking application status.
+- Managing employer reviews.
+
+---
+
+## Company Management Service
+
+Responsible for:
+
+- Company profiles.
+- Employer information.
+- Company verification.
+
+---
+
+## Notification Service
+
+Responsible for:
+
+- Application updates.
+- Job alerts.
+- System messages.
+
+---
+
+# 5.5 Database Architecture
+
+## Component
+
+Relational Database
+
+## Responsibility
+
+The database provides permanent storage for CareerForge information.
+
+---
+
+## Main Entities
+
+```
+User
+
+   |
+   |
+Profile
+
+   |
+   |
+Company
+
+   |
+   |
+Job
+
+   |
+   |
+Application
+```
+
+---
+
+## Database Responsibilities
+
+The database handles:
+
+- Data storage.
+- Relationships.
+- Data consistency.
+- Data retrieval.
+
+---
+
+# 5.6 External Services Layer
+
+CareerForge may integrate with external services in the future.
+
+Possible integrations:
+
+## Email Service
+
+Purpose:
+
+- Account verification.
+- Notifications.
+- Application updates.
+
+---
+
+## File Storage Service
+
+Purpose:
+
+- Resume storage.
+- Profile documents.
+- Company documents.
+
+---
+
+## AI Services
+
+Future purpose:
+
+- Job recommendations.
+- Resume analysis.
+- Candidate matching.
+
+---
+
+# 5.7 Request Flow Example
+
+## User Searches for Jobs
+
+```
+User
+
+ ↓
+
+React Search Page
+
+ ↓
+
+GET /api/jobs/search
+
+ ↓
+
+Django Job Service
+
+ ↓
+
+Database Query
+
+ ↓
+
+Matching Jobs Returned
+
+ ↓
+
+React Displays Results
+```
+
+---
+
+# 5.8 Why This Architecture Is Suitable
+
+## Separation
+
+Each component has a clear responsibility.
+
+---
+
+## Maintainability
+
+Developers can modify one area without affecting everything.
+
+Example:
+
+```
+Change React UI
+
+does not require
+
+database changes
+```
+
+---
+
+## Scalability
+
+New services can be added later.
+
+Example:
+
+```
+Current:
+
+Jobs Service
+
+
+Future:
+
+AI Matching Service
+
+Analytics Service
+
+Recommendation Service
+```
+
+---
+
+## Future Expansion
+
+The architecture supports:
+
+- Mobile applications.
+- AI features.
+- Advanced analytics.
+- Third-party integrations.
+
+---
+
+# High-Level Architecture Summary
+
+| Component | Technology | Responsibility |
+|---|---|---|
+| Frontend | React | User experience |
+| Backend | Django/Python | Business logic and APIs |
+| Database | PostgreSQL | Data management |
+| External Services | APIs | Additional capabilities |
