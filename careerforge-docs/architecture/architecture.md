@@ -344,3 +344,312 @@ The architecture should allow these features to integrate naturally.
 | Testability | Ensure system quality |
 | Extensibility | Support future features |
 
+# 3. System Overview
+
+## Description
+
+CareerForge is a web-based recruitment platform that connects Job Seekers and Employers through a structured job discovery and application process.
+
+The system follows a layered architecture where different components have clearly defined responsibilities.
+
+The main system consists of:
+
+- Client Layer (Frontend)
+- Application Layer (Backend)
+- Data Layer (Database)
+
+---
+
+# 3.1 High-Level System Structure
+
+The overall CareerForge architecture can be represented as:
+
+```
+                 Users
+                   |
+                   |
+                   ↓
+
+          React Frontend Application
+
+                   |
+                   |
+              HTTP Requests
+                   |
+                   ↓
+
+          Django Backend Application
+
+                   |
+                   |
+              Database Queries
+                   |
+                   ↓
+
+          Relational Database
+```
+
+---
+
+# 3.2 System Components
+
+## 1. Frontend Application
+
+### Responsibility
+
+The frontend provides the user interface through which users interact with CareerForge.
+
+### Technology
+
+React.js
+
+### Main Responsibilities
+
+- Display user interfaces.
+- Handle user interactions.
+- Manage client-side state.
+- Communicate with backend APIs.
+- Provide responsive user experience.
+
+### Main Users
+
+- Job Seekers.
+- Employers.
+- Administrators.
+
+---
+
+## 2. Backend Application
+
+### Responsibility
+
+The backend contains the core business logic of CareerForge.
+
+### Technology
+
+Django / Python
+
+### Main Responsibilities
+
+- Process user requests.
+- Validate business rules.
+- Authenticate users.
+- Manage permissions.
+- Handle job operations.
+- Manage applications.
+- Communicate with the database.
+
+---
+
+## 3. Database Layer
+
+### Responsibility
+
+The database stores and manages all persistent system information.
+
+### Main Data Stored
+
+- User accounts.
+- User roles.
+- Job seeker profiles.
+- Company profiles.
+- Job postings.
+- Applications.
+- System activities.
+
+---
+
+# 3.3 Main User Interactions
+
+## Job Seeker Workflow
+
+```
+Job Seeker
+
+    ↓
+
+Create Account
+
+    ↓
+
+Complete Profile
+
+    ↓
+
+Search Jobs
+
+    ↓
+
+View Job Details
+
+    ↓
+
+Submit Application
+
+    ↓
+
+Track Application Status
+```
+
+---
+
+## Employer Workflow
+
+```
+Employer
+
+    ↓
+
+Create Account
+
+    ↓
+
+Create Company Profile
+
+    ↓
+
+Publish Job Posting
+
+    ↓
+
+Receive Applications
+
+    ↓
+
+Review Candidates
+
+    ↓
+
+Update Application Status
+```
+
+---
+
+# 3.4 Communication Flow
+
+CareerForge components communicate through defined interfaces.
+
+Example:
+
+## Job Search Flow
+
+```
+User searches job
+
+        ↓
+
+React sends request
+
+        ↓
+
+Django API receives request
+
+        ↓
+
+Backend processes search logic
+
+        ↓
+
+Database returns matching jobs
+
+        ↓
+
+Backend sends response
+
+        ↓
+
+React displays results
+```
+
+---
+
+# 3.5 Architecture Layers
+
+CareerForge follows a layered approach:
+
+```
++--------------------------------+
+|        Presentation Layer      |
+|        React Frontend          |
++--------------------------------+
+
+              ↓
+
++--------------------------------+
+|        Application Layer       |
+|        Django Backend          |
+|        Business Logic          |
++--------------------------------+
+
+              ↓
+
++--------------------------------+
+|          Data Layer            |
+|        Database System         |
++--------------------------------+
+```
+
+---
+
+## Layer Responsibilities
+
+### Presentation Layer
+
+Responsible for:
+
+- User interface.
+- User interaction.
+- Displaying information.
+
+Does not contain:
+
+- Database logic.
+- Business rules.
+
+---
+
+### Application Layer
+
+Responsible for:
+
+- Business rules.
+- Authentication.
+- Authorization.
+- API processing.
+
+Does not directly control:
+
+- User interface.
+
+---
+
+### Data Layer
+
+Responsible for:
+
+- Data storage.
+- Data retrieval.
+- Data consistency.
+
+Does not contain:
+
+- User interface logic.
+
+---
+
+# System Overview Summary
+
+CareerForge is designed as a layered web application consisting of:
+
+| Layer | Technology | Responsibility |
+|---|---|---|
+| Presentation | React | User interaction |
+| Application | Django/Python | Business logic and APIs |
+| Data | Relational Database | Data storage |
+
+This separation allows CareerForge to remain:
+
+- Maintainable.
+- Secure.
+- Scalable.
+- Testable.
