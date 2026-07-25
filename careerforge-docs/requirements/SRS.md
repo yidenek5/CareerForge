@@ -2814,3 +2814,211 @@ Future enhancements are considered successfully planned when:
 - They solve meaningful user problems.
 - They can be integrated with the existing architecture.
 - They do not compromise system quality.
+
+# 8. Acceptance Criteria
+
+## Description
+
+Acceptance Criteria define the conditions that must be satisfied for CareerForge features and requirements to be considered successfully implemented.
+
+These criteria provide a clear method for validating that the system meets user expectations and business requirements.
+
+---
+
+# AC-001: User Account Management Acceptance Criteria
+
+## Feature
+
+User Registration and Authentication
+
+## Acceptance Criteria
+
+The feature is accepted when:
+
+- Users can create valid accounts.
+- Invalid registration information is rejected.
+- Users can securely log in.
+- Unauthorized users cannot access protected features.
+- Users can log out successfully.
+
+---
+
+# AC-002: Job Seeker Profile Acceptance Criteria
+
+## Feature
+
+Job Seeker Profile Management
+
+## Acceptance Criteria
+
+The feature is accepted when:
+
+- Job Seekers can create their profiles.
+- Users can update their professional information.
+- Required profile fields are validated.
+- Profile information is stored correctly.
+- Users can view their own profile data.
+
+---
+
+# AC-003: Employer and Company Acceptance Criteria
+
+## Feature
+
+Company Profile Management
+
+## Acceptance Criteria
+
+The feature is accepted when:
+
+- Employers can create company profiles.
+- Company information is associated with the correct employer.
+- Employers can update their own company information.
+- Unauthorized users cannot modify company data.
+
+---
+
+# AC-004: Job Posting Acceptance Criteria
+
+## Feature
+
+Job Management
+
+## Acceptance Criteria
+
+The feature is accepted when:
+
+- Authorized employers can create job postings.
+- Required job information is validated.
+- Published jobs are visible to job seekers.
+- Employers can update their own job postings.
+- Closed jobs cannot receive new applications.
+
+---
+
+# AC-005: Job Search Acceptance Criteria
+
+## Feature
+
+Job Discovery
+
+## Acceptance Criteria
+
+The feature is accepted when:
+
+- Users can browse available jobs.
+- Users can search jobs using keywords.
+- Users can filter jobs using available criteria.
+- Search results display accurate information.
+- Users can view complete job details.
+
+---
+
+# AC-006: Job Application Acceptance Criteria
+
+## Feature
+
+Application Management
+
+## Acceptance Criteria
+
+The feature is accepted when:
+
+- Authenticated job seekers can apply for active jobs.
+- The system creates an application record.
+- Duplicate applications are prevented.
+- Employers can view received applications.
+- Application status can be updated correctly.
+
+---
+
+# AC-007: Dashboard Acceptance Criteria
+
+## Feature
+
+User Dashboard
+
+## Acceptance Criteria
+
+The feature is accepted when:
+
+Job Seekers:
+
+- Can view application activities.
+- Can access saved jobs.
+- Can view profile information.
+
+Employers:
+
+- Can view job posting information.
+- Can view applicant activities.
+- Can manage recruitment activities.
+
+---
+
+# AC-008: Security Acceptance Criteria
+
+## Feature
+
+System Security
+
+## Acceptance Criteria
+
+The feature is accepted when:
+
+- Passwords are securely stored.
+- User permissions are enforced.
+- Private information is protected.
+- Unauthorized access attempts are blocked.
+- Security events are recorded.
+
+---
+
+# AC-009: Performance Acceptance Criteria
+
+## Feature
+
+System Performance
+
+## Acceptance Criteria
+
+The feature is accepted when:
+
+- Main pages load within defined performance targets.
+- Search results return within acceptable response time.
+- The system supports expected MVP users.
+- Performance remains stable during normal operation.
+
+---
+
+# AC-010: Overall System Acceptance Criteria
+
+## Feature
+
+Complete CareerForge MVP
+
+## Acceptance Criteria
+
+The MVP is accepted when:
+
+- Job Seekers can discover and apply for jobs.
+- Employers can publish jobs and manage applicants.
+- User information is securely managed.
+- Core workflows operate without critical errors.
+- The system satisfies functional and non-functional requirements.
+- The platform provides a usable recruitment experience.
+
+---
+
+# Acceptance Criteria Verification Methods
+
+Acceptance criteria shall be verified through:
+
+| Verification Method | Purpose |
+|---|---|
+| Functional Testing | Verify system features work correctly |
+| User Acceptance Testing | Verify user expectations are satisfied |
+| Performance Testing | Verify speed and responsiveness |
+| Security Testing | Verify protection mechanisms |
+| Usability Testing | Verify ease of use |
+| Code Review | Verify implementation quality |
