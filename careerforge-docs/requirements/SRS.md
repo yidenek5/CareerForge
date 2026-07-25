@@ -2163,3 +2163,218 @@ The reliability requirements are satisfied when:
 - Errors are handled safely.
 - Backup and recovery processes work correctly.
 - User data remains accurate and consistent.
+
+# 5. Business Rules
+
+## Description
+
+Business rules define the conditions, restrictions, and policies that control how users interact with CareerForge.
+
+These rules ensure that the platform operates consistently and maintains correct relationships between users, companies, jobs, and applications.
+
+---
+
+# BR-001: User Account Requirement
+
+## Rule
+
+Every user must have a registered account before accessing protected CareerForge features.
+
+## Description
+
+Users must authenticate before performing actions that require personal data or account ownership.
+
+## Applies To
+
+- Job Seekers
+- Employers
+- Administrators
+
+---
+
+# BR-002: Role-Based Feature Access
+
+## Rule
+
+Users can only access features permitted for their assigned role.
+
+## Description
+
+Each user role has specific responsibilities and permissions.
+
+Examples:
+
+Job Seeker:
+
+- Can create a profile.
+- Can search jobs.
+- Can apply for jobs.
+
+Employer:
+
+- Can create company profiles.
+- Can publish job postings.
+- Can review applicants.
+
+Administrator:
+
+- Can manage platform operations.
+
+---
+
+# BR-003: Job Posting Ownership
+
+## Rule
+
+Only authorized Employers can create and manage their own job postings.
+
+## Description
+
+An Employer cannot modify or delete job postings created by another Employer.
+
+---
+
+# BR-004: Company Ownership
+
+## Rule
+
+Each company profile must be associated with an authorized Employer account.
+
+## Description
+
+Only the Employer who owns the company profile or an authorized administrator can update company information.
+
+---
+
+# BR-005: Job Application Eligibility
+
+## Rule
+
+Only registered Job Seekers can submit job applications.
+
+## Description
+
+A user must have a valid Job Seeker account before applying for employment opportunities.
+
+---
+
+# BR-006: Duplicate Application Prevention
+
+## Rule
+
+A Job Seeker cannot submit multiple applications for the same job posting.
+
+## Description
+
+The system must check existing applications before creating a new application.
+
+Example:
+
+Allowed:
+
+```
+Job Seeker
+      |
+      ↓
+Apply once
+      |
+      ↓
+Application created
+```
+
+Not allowed:
+
+```
+Job Seeker
+      |
+      ↓
+Apply
+      |
+      ↓
+Apply again for same job
+      |
+      ↓
+Rejected
+```
+
+---
+
+# BR-007: Closed Job Restriction
+
+## Rule
+
+Closed or expired job postings cannot receive new applications.
+
+## Description
+
+Only active job postings are available for application submission.
+
+---
+
+# BR-008: Application Status Control
+
+## Rule
+
+Application statuses must follow the defined recruitment workflow.
+
+## Description
+
+Valid application status changes include:
+
+```
+Submitted
+     ↓
+Under Review
+     ↓
+Shortlisted
+     ↓
+Accepted / Rejected
+```
+
+Invalid status changes should be prevented.
+
+Example:
+
+```
+Accepted
+    ↓
+Submitted
+```
+
+This transition is not allowed.
+
+---
+
+# BR-009: Profile Information Integrity
+
+## Rule
+
+Users are responsible for maintaining accurate information in their profiles.
+
+## Description
+
+The system shall validate required information before saving profile changes.
+
+---
+
+# BR-010: Data Privacy Protection
+
+## Rule
+
+Private user information must only be visible to authorized users.
+
+## Description
+
+Examples:
+
+Job Seekers:
+
+- Can edit their own profiles.
+
+Employers:
+
+- Can view candidate information related to applications.
+
+Unauthorized users:
+
+- Cannot access private information.
