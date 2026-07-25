@@ -2053,3 +2053,113 @@ The scalability requirements are satisfied when:
 - New features can be added without major redesign.
 - Database and infrastructure can grow with demand.
 - Performance remains acceptable as the system expands.
+
+## 4.5 Reliability Requirements
+
+### Description
+
+The Reliability Requirements define the ability of CareerForge to provide continuous, accurate, and dependable services while minimizing failures and data loss.
+
+The system shall maintain stable operation, handle unexpected errors, and recover effectively from failures.
+
+---
+
+## NFR-RELIABILITY-001: System Availability
+
+### Requirement
+
+The system shall remain available and accessible to users during normal operating conditions.
+
+### Measurement Criteria
+
+| Metric | Target | Verification Method |
+|---|---|---|
+| System availability | 99% uptime during normal operation | System monitoring |
+| Service interruption | Planned downtime should be minimized and communicated | Operational review |
+| Failed service recovery | Services restored within acceptable recovery time | Recovery testing |
+
+---
+
+## NFR-RELIABILITY-002: Error Handling
+
+### Requirement
+
+The system shall handle unexpected errors without causing data loss or system crashes.
+
+### Measurement Criteria
+
+| Metric | Target | Verification Method |
+|---|---|---|
+| Application crash prevention | System should handle common failures gracefully | Error testing |
+| Error reporting | System records important errors for investigation | Log review |
+| User feedback | Users receive understandable error messages | Usability testing |
+
+---
+
+## NFR-RELIABILITY-003: Data Backup and Recovery
+
+### Requirement
+
+The system shall maintain backup mechanisms to protect important CareerForge data.
+
+### Protected Data
+
+The backup system shall protect:
+
+- User accounts.
+- Job seeker profiles.
+- Company information.
+- Job postings.
+- Applications.
+
+### Measurement Criteria
+
+| Metric | Target | Verification Method |
+|---|---|---|
+| Backup frequency | Regular automated backups | Backup verification |
+| Data restoration | Backup data can be restored successfully | Recovery testing |
+| Data loss prevention | Critical data loss is minimized | Disaster recovery testing |
+
+---
+
+## NFR-RELIABILITY-004: Data Integrity
+
+### Requirement
+
+The system shall maintain accurate and consistent data throughout all operations.
+
+### Measurement Criteria
+
+| Metric | Target | Verification Method |
+|---|---|---|
+| Data validation | Invalid data entries are prevented | Functional testing |
+| Database consistency | Related data remains synchronized | Database testing |
+| Transaction reliability | Important operations complete successfully or are safely reversed | System testing |
+
+---
+
+## NFR-RELIABILITY-005: Fault Recovery
+
+### Requirement
+
+The system shall recover from unexpected failures and return to normal operation.
+
+### Measurement Criteria
+
+| Metric | Target | Verification Method |
+|---|---|---|
+| Recovery time | System restored within defined recovery period | Recovery testing |
+| Failure detection | System identifies major failures | Monitoring testing |
+| Service restoration | Users can continue normal activities after recovery | User acceptance testing |
+
+---
+
+# Reliability Acceptance Criteria
+
+The reliability requirements are satisfied when:
+
+- CareerForge remains available during normal usage.
+- System failures do not cause major data loss.
+- Errors are handled safely.
+- Backup and recovery processes work correctly.
+- User data remains accurate and consistent.
