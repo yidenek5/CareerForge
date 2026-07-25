@@ -653,3 +653,475 @@ This separation allows CareerForge to remain:
 - Secure.
 - Scalable.
 - Testable.
+
+
+# 4. Architecture Pattern
+
+## Description
+
+CareerForge follows a combination of modern software architecture patterns to achieve maintainability, scalability, security, and clear separation of responsibilities.
+
+The main architectural approaches are:
+
+1. Client-Server Architecture
+2. Layered Architecture
+3. MVC/MVT Pattern
+4. REST API Architecture
+
+---
+
+# 4.1 Client-Server Architecture
+
+## Pattern
+
+CareerForge follows a Client-Server architecture where the frontend client communicates with the backend server through network requests.
+
+## Structure
+
+```
+Client
+
+React Frontend
+
+        |
+        |
+     HTTP/API
+
+        |
+        ↓
+
+Server
+
+Django Backend
+```
+
+---
+
+## Client Responsibilities
+
+The React frontend is responsible for:
+
+- Displaying user interfaces.
+- Collecting user input.
+- Managing UI state.
+- Sending requests to backend services.
+- Displaying responses.
+
+The frontend does not handle:
+
+- Database operations.
+- Core business rules.
+- Direct data manipulation.
+
+---
+
+## Server Responsibilities
+
+The Django backend is responsible for:
+
+- Processing requests.
+- Applying business rules.
+- Authenticating users.
+- Authorizing actions.
+- Managing application logic.
+- Communicating with the database.
+
+---
+
+## Benefits
+
+Client-server architecture provides:
+
+- Clear separation between frontend and backend.
+- Independent development.
+- Easier maintenance.
+- Support for multiple clients in the future.
+
+Example:
+
+```
+Same Backend API
+
+        |
+        +------ React Web App
+        |
+        +------ Mobile App
+        |
+        +------ Future Applications
+```
+
+---
+
+# 4.2 Layered Architecture
+
+## Pattern
+
+CareerForge follows a layered architecture where each layer has a specific responsibility.
+
+## Structure
+
+```
++--------------------------------+
+| Presentation Layer             |
+| React Components               |
++--------------------------------+
+
+              ↓
+
++--------------------------------+
+| Business Layer                 |
+| Django Services and Logic      |
++--------------------------------+
+
+              ↓
+
++--------------------------------+
+| Data Access Layer              |
+| Django ORM                     |
++--------------------------------+
+
+              ↓
+
++--------------------------------+
+| Database Layer                 |
+| PostgreSQL                     |
++--------------------------------+
+```
+
+---
+
+## Layer Responsibilities
+
+### Presentation Layer
+
+Technology:
+
+```
+React.js
+```
+
+Responsibilities:
+
+- User interface.
+- Forms.
+- Pages.
+- User interaction.
+- Client-side validation.
+
+---
+
+### Business Layer
+
+Technology:
+
+```
+Django/Python
+```
+
+Responsibilities:
+
+- Application rules.
+- User permissions.
+- Job processing.
+- Application workflow.
+- Data validation.
+
+---
+
+### Data Access Layer
+
+Technology:
+
+```
+Django ORM
+```
+
+Responsibilities:
+
+- Database communication.
+- Query management.
+- Data mapping.
+
+---
+
+### Database Layer
+
+Technology:
+
+```
+Relational Database
+```
+
+Responsibilities:
+
+- Permanent storage.
+- Data consistency.
+- Relationships between entities.
+
+---
+
+# 4.3 MVC/MVT Pattern
+
+## Pattern
+
+CareerForge backend follows Django's MVT (Model-View-Template) architecture pattern.
+
+Django uses a variation of MVC.
+
+---
+
+## Traditional MVC
+
+```
+Model
+
+    |
+    |
+
+Controller
+
+    |
+    |
+
+View
+```
+
+---
+
+## Django MVT
+
+```
+Model
+
+    |
+    |
+
+View
+
+    |
+    |
+
+Template
+```
+
+---
+
+## CareerForge Implementation
+
+### Model
+
+Responsible for:
+
+- Database structure.
+- Data relationships.
+- Data operations.
+
+Examples:
+
+```
+User
+Company
+Job
+Application
+```
+
+---
+
+### View
+
+Responsible for:
+
+- Receiving requests.
+- Processing logic.
+- Returning responses.
+
+Examples:
+
+```
+Search Jobs API
+
+Apply Job API
+
+Login API
+```
+
+---
+
+### Template
+
+In traditional Django:
+
+- HTML presentation layer.
+
+In CareerForge:
+
+React replaces Django templates.
+
+Therefore:
+
+```
+React UI
+
+        +
+
+Django API Views
+```
+
+---
+
+# 4.4 REST API Architecture
+
+## Pattern
+
+CareerForge uses REST API architecture for communication between frontend and backend.
+
+## Structure
+
+```
+React
+
+   |
+   |
+HTTP Requests
+
+   |
+   ↓
+
+Django REST API
+
+   |
+   |
+Database
+```
+
+---
+
+## API Communication Example
+
+### Request
+
+```
+GET /api/jobs/
+```
+
+Meaning:
+
+"Give me available jobs."
+
+---
+
+### Response
+
+```json
+[
+ {
+   "title": "Frontend Developer",
+   "company": "Example Company"
+ }
+]
+```
+
+---
+
+## REST API Benefits
+
+REST architecture provides:
+
+- Frontend/backend independence.
+- Easy mobile application support.
+- Clear communication rules.
+- Scalable system design.
+
+---
+
+# 4.5 Why This Architecture Was Chosen
+
+CareerForge uses this architecture because:
+
+## Maintainability
+
+Each part has a clear responsibility.
+
+Example:
+
+```
+React changes
+
+does not require
+
+database redesign
+```
+
+---
+
+## Scalability
+
+Future applications can reuse backend services.
+
+Example:
+
+```
+CareerForge API
+
+        |
+        +---- Web App
+        |
+        +---- Mobile App
+        |
+        +---- AI Services
+```
+
+---
+
+## Security
+
+Sensitive operations remain controlled by the backend.
+
+Example:
+
+```
+React
+
+Cannot directly modify database
+
+        ↓
+
+Django validates request
+
+        ↓
+
+Database update
+```
+
+---
+
+## Extensibility
+
+Future modules can be added independently.
+
+Examples:
+
+```
+Current:
+
+Jobs
+Applications
+
+
+Future:
+
+AI Matching
+Analytics
+Messaging
+```
+
+---
+
+# Architecture Pattern Summary
+
+| Pattern | Purpose |
+|---|---|
+| Client-Server | Separates user interface and server logic |
+| Layered Architecture | Organizes system responsibilities |
+| Django MVT | Structures backend development |
+| REST API | Enables frontend-backend communication |
